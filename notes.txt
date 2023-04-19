@@ -1,0 +1,13 @@
+At runtime:
+    -pull save 
+    -display save as calandar view of streak
+    -command to exit
+    -command to make new element
+    -element wise yes/no daily habit met
+
+Save file format:
+    -json file with key (habit) - value (streak) tracking whether or not that habit was done that day
+     so for example: reading: yes     or go gym: no
+    -field tracking current streak for each habit
+
+
