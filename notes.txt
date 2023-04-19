@@ -10,4 +10,5 @@ Save file format:
      so for example: reading: yes     or go gym: no
     -field tracking current streak for each habit
 
-
+April 19:
+    -Wrote a read and write for save file, started streak calcualting function
