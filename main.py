@@ -1,4 +1,17 @@
 import json
+import pickle
+
+class habit():
+    def __init__(self, name):
+        self.name = name
+        self.streak = 0
+
+def save_habit(habit):
+    try:
+        with open("save.pickle", "wb") as f:
+            pickle.dump(habit, f, protocol=pickle.HIGHEST_PROTOCOL)
+    except Exception as ex:
+        print("Error during pickling object (Possibly unsupported):", ex)
 
 def load_save():
     with open('save.json', 'r') as openfile:
@@ -28,8 +41,8 @@ def habitMet():
     habits = load_save()
     for habit in habits:
         print("Habit: "+habit + "?")
-        try:
-            habitToday = input("Y/n: ")
+        #try:
+            #habitToday = input("Y/n: ")
 
 
 
@@ -37,4 +50,6 @@ def habitMet():
 if __name__ == '__main__':
     #writeSave()
     #load_save()
-    habitMet()
+    #habitMet()
+    test_habit = habit("Yoyo")
+    save_habit(test_habit)

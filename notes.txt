@@ -21,3 +21,7 @@ April 19:
 
 April 20: 
     -Research save options
+
+April 21:
+    -Wrote a habit class with name and streak attributes
+    -wrote a pickle function to sabe the habit objects
