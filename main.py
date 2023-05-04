@@ -52,4 +52,10 @@ if __name__ == '__main__':
     #load_save()
     #habitMet()
     test_habit = habit("Yoyo")
-    save_habit(test_habit)
+    #save_habit(test_habit)
+    file_test = open('save.pickle', 'wb')
+    pickle.dump(test_habit, file_test)
+
+    test_open_filehandler = open('save.pickle', 'rb')
+    objectTest = pickle.load(test_open_filehandler)
+    #print(object.name)
