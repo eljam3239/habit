@@ -37,6 +37,7 @@ def writeSave():
     with open("save.json", "w") as outfile:
         outfile.write(json_object)
 
+#calculate whether increment streak
 def habitMet():
     habits = load_save()
     for habit in habits:
@@ -44,6 +45,13 @@ def habitMet():
         #try:
             #habitToday = input("Y/n: ")
 
+#function for displaying a specific object
+def display_habit():
+    return 0
+
+#function to display habits and their streaks
+def display_habits():
+    return 0
 
 
 
