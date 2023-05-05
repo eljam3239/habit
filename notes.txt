@@ -27,3 +27,6 @@ April 21:
     -wrote a pickle function to sabe the habit objects
         -need to write a function to pull pickle objects from the .pickle file
         https://docs.python.org/3/library/pickle.html
+
+May 4th:
+    -Can print habits
