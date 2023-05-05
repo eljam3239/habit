@@ -46,7 +46,9 @@ def habitMet():
             #habitToday = input("Y/n: ")
 
 #function for displaying a specific object
-def display_habit():
+def display_habit(habit):
+    print(habit.name)
+    print(habit.streak)
     return 0
 
 #function to display habits and their streaks
@@ -60,10 +62,12 @@ if __name__ == '__main__':
     #load_save()
     #habitMet()
     test_habit = habit("Yoyo")
+    display_habit(test_habit)
     #save_habit(test_habit)
     file_test = open('save.pickle', 'wb')
     pickle.dump(test_habit, file_test)
 
-    test_open_filehandler = open('save.pickle', 'rb')
-    objectTest = pickle.load(test_open_filehandler)
+    #read test
+    #test_open_filehandler = open('save.pickle', 'rb')
+    #objectTest = pickle.load(test_open_filehandler)
     #print(object.name)
